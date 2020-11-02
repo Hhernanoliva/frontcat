@@ -1,0 +1,50 @@
+@import "../mixin/respon";
+@font-face {
+    font-family: "Rock";
+    src: url(../../font/rock.ttf);
+    }
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-family: "Rock";
+    margin: auto;
+    text-align: center;
+    .container{
+        h1{
+            a{
+                transition: all 1s ease;
+                font-weight: bold;
+                color: #9364b9;
+                text-shadow: #cca8e9 0.5px 0.9px 0.1px;
+            }
+        }
+    }
+    
+}
+    @include respon(tablet){ ///////////////////// TABLET
+        .navbar{
+            img{
+                width: 60px;
+                height: 60px;
+                margin: 0 20px 0 0;
+            }
+            h1{
+                a{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    @include respon(mobile){ ///////// MOBILE
+        .navbar{
+            height: 50px;
+            img{
+                width: 35px;
+                height: 35px;
+                margin: 0 10px 0 0;
+            }
+        }
+    }

@@ -1,0 +1,123 @@
+@import "../mixin/respon";
+
+section{
+    background-color:#cadefc;
+    overflow: visible;
+    .service{
+        .container{
+            .card{
+                .izq{
+                    position: relative;
+                    .video {
+                        display: flex;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: 300px;
+                        height: 534px;
+                        z-index: 1;
+                        -ms-transform: translateX(-50%) translateY(-50%);
+                        -moz-transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                        background: url(placeholder.jpg) no-repeat;
+                        background-size: cover;
+                        }
+                }
+                .der{
+                    background-color: white;
+                    color: black;
+                }
+            }
+            .card-rev{
+                .der-rev{
+                    
+                }
+                .izq-rev{
+                    position: relative;
+                    .video {
+                        display: flex;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: 300px;
+                        height: 534px;
+                        z-index: 1;
+                        -ms-transform: translateX(-50%) translateY(-50%);
+                        -moz-transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                        background: url(placeholder.jpg) no-repeat;
+                        background-size: cover;
+                        }
+                }
+            }
+           
+        }
+    }
+    @include respon(tablet){ ///////////////////// TABLET
+        .service{
+            padding: 100px;
+            .container{
+                width: 100%;
+                .card{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    .izq{
+                        position: relative;
+                        width: 300px;
+                        height: 450px;
+                        margin: 0 100px 0 0;
+                    }
+                    .der{
+                        padding: 40px;
+                        width: 300px;
+                        height: 350px;
+                        font-size: 1rem;
+                    }
+                }
+
+                .card-rev{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    margin: 180px 0 0 0;
+                    .izq-rev{
+                        background-color: aquamarine;
+                        width: 300px;
+                        height: 450px;
+                        
+                    }
+                    
+                    .der-rev{
+                        background-color: rgb(255, 238, 0);
+                        width: 300px;
+                        height: 350px;
+                        margin: 0 100px 0 0;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    @include respon(mobile){ ///////// MOBILE
+        .service{
+            .container{
+                izq{
+    
+                }
+                .der{
+    
+                }
+            }
+        }
+    }
+}
