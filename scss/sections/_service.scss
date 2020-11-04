@@ -16,8 +16,12 @@ section{
     }
     @include respon(tablet){ ///////////////////// TABLET
         .service{
+            position: relative;
             padding: 100px 0 0 0;
             display: flex;
+            overflow: visible;
+            box-sizing: content-box;
+
             .container{
                 width: 100%;
                 display: flex;
@@ -26,6 +30,20 @@ section{
                 flex-direction: column;
                 .card{  
                     margin: 0 200px 100px 0;
+                    .izq-blob{
+                        position: absolute;
+                        width: 500px;
+                        left: -20%;
+                        top: 10%;
+                        transition: all 1s ease;
+                    }
+                    .der-blob{
+                        position: absolute;
+                        width: 600px;
+                        right: -20%;
+                        top: 50%;
+                        transition: all 2s ease;
+                    }
                     .content{
                         padding: 20px 40px;
                         width: 400px;
@@ -73,17 +91,16 @@ section{
                         }   
                     }
                     .content-rev{
+                        margin: 0 0 0 400px;
                         padding: 20px 40px;
                         width: 400px;
                         height: 350px;
-                        
-                        // border: solid 0.1px rgba(0, 0, 0, 0.404);
-                        // box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.384);
+                        position: relative;
                         .container-rev{
                             width: 170px;
                             position: absolute;
                             top: 50%;
-                            left: 0;
+                            left: -25%; 
                             z-index: 1;
                             -ms-transform: translateX(-50%) translateY(-50%);
                             -moz-transform: translateX(-50%) translateY(-50%);
@@ -91,7 +108,6 @@ section{
                             transform: translateX(-50%) translateY(-50%);
                             background: url(placeholder.jpg) no-repeat;
                             background-size: cover;
-
                             .video {
                                 box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);;
                                 width: 100%;
@@ -103,17 +119,20 @@ section{
                             font-size: 1rem;
                             letter-spacing: 1.2px;
                             line-height: 24px;
+                            margin: 0 0 0 0;
+                             
                         }
                         .container-tech{
                             position: relative;
                             display:flex;
+                            justify-content: flex-end;
                             img{
-                                margin: 40px 20px 0 0;
+                                margin: 40px 0 0 20px;
                                 width: 40px;
                             }
                             a{
                                 position: absolute;
-                                right: 0;
+                                left: 0;
                                 bottom: -50%;
                             }
                         }   

@@ -20,9 +20,9 @@ header {
   .footer p {
     margin: 0.5em; }
     .footer p span {
-      color: #ff4081;
+      color: #0dceda;
       font-family: "Rock";
-      text-shadow: #ff4081 0.5px 0.9px 0.1px;
+      text-shadow: #0dceda 0.5px 0.9px 0.1px;
       font-size: 1.5rem;
       font-weight: bold; }
   .footer span img {
@@ -39,8 +39,11 @@ section {
     color: black; }
   @media (min-width: 767px) {
     section .service {
+      position: relative;
       padding: 100px 0 0 0;
-      display: flex; }
+      display: flex;
+      overflow: visible;
+      box-sizing: content-box; }
       section .service .container {
         width: 100%;
         display: flex;
@@ -49,6 +52,18 @@ section {
         flex-direction: column; }
         section .service .container .card {
           margin: 0 200px 100px 0; }
+          section .service .container .card .izq-blob {
+            position: absolute;
+            width: 500px;
+            left: -20%;
+            top: 10%;
+            transition: all 1s ease; }
+          section .service .container .card .der-blob {
+            position: absolute;
+            width: 600px;
+            right: -20%;
+            top: 50%;
+            transition: all 2s ease; }
           section .service .container .card .content {
             padding: 20px 40px;
             width: 400px;
@@ -84,14 +99,16 @@ section {
                 right: 0;
                 bottom: -50%; }
           section .service .container .card .content-rev {
+            margin: 0 0 0 400px;
             padding: 20px 40px;
             width: 400px;
-            height: 350px; }
-            section .service .container .card .content-rev .container {
+            height: 350px;
+            position: relative; }
+            section .service .container .card .content-rev .container-rev {
               width: 170px;
               position: absolute;
               top: 50%;
-              left: 125%;
+              left: -25%;
               z-index: 1;
               -ms-transform: translateX(-50%) translateY(-50%);
               -moz-transform: translateX(-50%) translateY(-50%);
@@ -99,23 +116,25 @@ section {
               transform: translateX(-50%) translateY(-50%);
               background: url(placeholder.jpg) no-repeat;
               background-size: cover; }
-              section .service .container .card .content-rev .container .video {
+              section .service .container .card .content-rev .container-rev .video {
                 box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);
                 width: 100%;
                 border: solid 0.1px rgba(0, 0, 0, 0.404); }
             section .service .container .card .content-rev p {
               font-size: 1rem;
               letter-spacing: 1.2px;
-              line-height: 24px; }
+              line-height: 24px;
+              margin: 0 0 0 0; }
             section .service .container .card .content-rev .container-tech {
               position: relative;
-              display: flex; }
+              display: flex;
+              justify-content: flex-end; }
               section .service .container .card .content-rev .container-tech img {
-                margin: 40px 20px 0 0;
+                margin: 40px 0 0 20px;
                 width: 40px; }
               section .service .container .card .content-rev .container-tech a {
                 position: absolute;
-                right: 0;
+                left: 0;
                 bottom: -50%; } }
 
 @font-face {

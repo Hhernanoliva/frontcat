@@ -26,14 +26,7 @@ const load = () => {
       
       });
 
-      var myWave = wavify( document.querySelector('#myId'), {
-        height: 60,
-        bones: 3,
-        amplitude: 40,
-        color: 'rgba(216,173,80,0.9)',
-        speed: .25
-      })
-
+      
 // make some waves.
 
 
