@@ -157,11 +157,16 @@ section {
       border-radius: 2%;
       box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.274);
       margin: 0 0 20px 0; }
+    .equipo .container .card .redes .icono {
+      margin: 0 15px;
+      width: 20px;
+      height: 20px; }
     .equipo .container .card h1 {
       font-size: 1.2rem;
       text-align: center; }
     .equipo .container .card p {
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      margin: 0 0 10px 0; }
 
 @font-face {
   font-family: "Rock";
