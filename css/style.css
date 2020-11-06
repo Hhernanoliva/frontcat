@@ -39,6 +39,7 @@ section {
     color: black; }
   @media (min-width: 767px) {
     section .service {
+      width: 100wh;
       position: relative;
       padding: 100px 0 0 0;
       display: flex;
@@ -49,20 +50,24 @@ section {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-direction: column; }
+        flex-direction: column;
+        box-sizing: content-box; }
         section .service .container .card {
+          position: relative;
+          box-sizing: content-box;
           margin: 0 200px 100px 0; }
           section .service .container .card .izq-blob {
             position: absolute;
-            width: 500px;
-            left: -20%;
-            top: 10%;
-            transition: all 1s ease; }
+            width: 600px;
+            right: 130%;
+            top: -10%;
+            transition: all 1s ease;
+            transform: rotate(90deg); }
           section .service .container .card .der-blob {
             position: absolute;
-            width: 600px;
-            right: -20%;
-            top: 50%;
+            width: 700px;
+            left: 150%;
+            top: 110%;
             transition: all 2s ease; }
           section .service .container .card .content {
             padding: 20px 40px;
@@ -136,6 +141,27 @@ section {
                 position: absolute;
                 left: 0;
                 bottom: -50%; } }
+
+.equipo .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; }
+  .equipo .container .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px 0 0; }
+    .equipo .container .card .foto {
+      border-radius: 2%;
+      box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.274);
+      margin: 0 0 20px 0; }
+    .equipo .container .card h1 {
+      font-size: 1.2rem;
+      text-align: center; }
+    .equipo .container .card p {
+      font-size: 0.8rem; }
 
 @font-face {
   font-family: "Rock";
@@ -239,3 +265,7 @@ a {
 
 .wave {
   background-color: #c6fce56b; }
+
+section {
+  overflow: hidden;
+  box-sizing: border-box; }

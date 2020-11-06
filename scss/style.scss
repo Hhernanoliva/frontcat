@@ -1,8 +1,9 @@
 @import "./sections/header";
 @import "./sections/footer";
 @import "./sections/service";
+@import "./sections/equipo";
 @import "./component/navbar";
-@import "./mixin/respon";
+@import "./mixin/respon"; 
 
 
 
@@ -81,4 +82,7 @@ a {
 .wave{
   background-color: #c6fce56b;
 }
-
+section{
+  overflow: hidden;
+  box-sizing: border-box;
+}
