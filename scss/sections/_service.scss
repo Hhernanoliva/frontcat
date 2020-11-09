@@ -1,9 +1,11 @@
 @import "../mixin/respon";
 
 section{
-    background-color:#c6fce56b;
     overflow: visible;
     .service{
+        overflow: visible;
+        // background-color:#c6fce56b;
+        background-color: white;
         .container{
             .card{
                 .content{
@@ -45,7 +47,7 @@ section{
                         position: absolute;
                         width: 700px;
                         left: 150%;
-                        top: 110%;
+                        top: 80%;
                         transition: all 2s ease;
                     }
                     .content{
@@ -79,6 +81,9 @@ section{
                             font-size: 1rem;
                             letter-spacing: 1.2px;
                             line-height: 24px;
+                            a{
+                               color: #e272a5;
+                            }
                         }
                         .container-tech{
                             position: relative;
@@ -91,6 +96,7 @@ section{
                                 position: absolute;
                                 right: 0;
                                 bottom: -50%;
+                                color: #e272a5;
                             }
                         }   
                     }
@@ -124,7 +130,9 @@ section{
                             letter-spacing: 1.2px;
                             line-height: 24px;
                             margin: 0 0 0 0;
-                             
+                            a{
+                                color:#e272a5;
+                            }
                         }
                         .container-tech{
                             position: relative;
@@ -138,6 +146,7 @@ section{
                                 position: absolute;
                                 left: 0;
                                 bottom: -50%;
+                                color: #e272a5;
                             }
                         }   
                     }

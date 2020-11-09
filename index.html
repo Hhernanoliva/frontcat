@@ -9,6 +9,7 @@
     <meta name="copyright" content="FrontCat">
     <link rel="shortcut icon" href="">
 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
@@ -19,7 +20,7 @@
 
 <body onload="load()">
 
-    <section>
+    <section id="hero">
         <div class="navbar">
             <div class="container">
                 <h1><a href="">FrontCat</a></h1>
@@ -28,18 +29,30 @@
         </div>
         <header>
             <div class="hero">
-                <h1 style="margin: 300px; color:#ebfffa">FRONTCAT PROBANDO</h1>
+                <div class="izq">
+                    <img src="./img/gatico-hero.jpg" alt="">
+                </div>
+                <div class="der">
+                    <h1>Transformate en web</h1>
+                    <h2>Asi podrás vender y ofrecer tus servicios vinculando a tus clientes con un concepto de buena calidad y profesionalismo.</h2>
+                    <div class="container">
+                        <a class="button" href="https://wa.link/bjgrov" target="_blank"><button>¡Quiero mi web!</button></a>
+                    </div>
+                </div>
+                
             </div>
+            
         </header>
+       
+        <a class="arrow" href="index.html#service"></a>
     </section>
-    <div class="wave"style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-29.11,-1.67 C150.00,150.00 299.32,-91.47 545.93,69.38 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill:#0dceda;"></path></svg></div>
     <section>
 
         
         
-        <div class="service">
+        <div class="service" id="service">
             <div class="container">
-                <div class="card"> 
+                <div class="card" > 
                     <img class="der-blob" data-aos="zoom-out-left" src="./img/blob2.svg" alt="">
                     <img class="izq-blob" data-aos="zoom-out-right" src="./img/blob2.svg" alt="">
                     <div class="content">
@@ -62,10 +75,10 @@
                         </div> 
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" >
                    
                     <div class="content-rev">
-                        <div class="container-rev">
+                        <div class="container-rev" >
                             <video playsinline autoplay muted loop poster="placeholder.jpg" class="video" width="x" height="y">
                                 <source src="./video/yj.mp4" type="video/mp4">
                             </video>
@@ -88,36 +101,58 @@
                 </div>
             </div>
         </div>
-        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+        
     </section>
 
     <section id="equipo">
         <div class="equipo">
-            <h2>EQUIPO</h2>
-            <div class="container">
-                <div class="card">
-                    <img class="foto" src="./img/loly.jpg" alt="">
-                    <h1>Leonela Venturo <a href="https://www.linkedin.com/in/leonela-nahir-venturo/""><img src="" alt=""></a></h1>
-                    <p>Front-End Dev | Ux Desing | Copywrite</p>
-                    <div class="redes">
-                        <a href=""><img class="icono" src="./img/linkedin.svg" alt=""></a>
-                        <a href=""><img class="icono" src="./img/insta.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="foto" src="./img/kza.jpg" alt="">
-                    <h1>Hernán Oliva <a href="https://www.linkedin.com/in/leonela-nahir-venturo/""><img src="" alt=""></a></h1>
-                    
-                    <p>Front-End Dev | Ui Desing | Photografo</p>
-                    <div class="redes">
-                        <a href=""><img class="icono" src="./img/linkedin.svg" alt=""></a>
-                        <a href=""><img class="icono" src="./img/insta.png" alt=""></a>
-                    </div>
+            <div class="container-content">
+                <div class="content">
+                    <h2>EQUIPO</h2>
+                    <article>No somos una agencia más, formamos un equipo de catlovers que tienen empatía por tu proyecto y 
+                        toda la buena onda para hacer de tus sueños e ideas un espacio digital cautivador y atractivo para los usuarios. 
+                        ¡Somos una combinación perfecta! <br> Vamos a estar felices de conocerte.</article>
                 </div>
             </div>
+            
+            <div class="container">
+                <div class="card">
+                    <div class="container-content" style="text-align: end;">
+                        <h1>Hernán Oliva <a href="https://www.linkedin.com/in/leonela-nahir-venturo/""><img src="" alt=""></a></h1>
+                        <p>Front-End Dev | Ui Desing | Photografo</p>
+                        <div class="redes">
+                            <a href="" style="margin: 0 10px;"><img class="icono" src="./img/linkedin.svg" alt=""></a>
+                            <a href=""><img class="icono" src="./img/insta.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="container-foto">
+                        <img class="foto" src="./img/kza.jpg" alt="">
+                    </div>
+                    
+                    
+                </div>
+                <div class="card">
+                    <div class="container-foto">
+                        <img class="foto" src="./img/loli.jpg" alt="">
+                    </div>
+                    <div class="container-content">
+                        <h1>Leonela Venturo <a href="https://www.linkedin.com/in/leonela-nahir-venturo/""><img src="" alt=""></a></h1>
+                        <p>Front-End Dev | Ux Desing | Copywrite</p>
+                        <div class="redes">
+                            <a href="" style="margin: 0 10px 0 0;"><img class="icono" src="./img/linkedin.svg" alt=""></a>
+                            <a href=""><img class="icono" src="./img/insta.png" alt=""></a>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+            <a href="" class="calltoaction"><button style="background: #ff4f5a;">QUIERO ESCRIBIRLES</button></a>
+        </div>
+        <div class="linea-animation">
+            <img src="./img/gatico.webp" alt="">
         </div>
     </section>
-
+    
     <section class="footer">
         <p>© Copyright 2020 | <span>FrontCat</span> </p>
     </section>
