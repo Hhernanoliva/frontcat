@@ -1,15 +1,61 @@
 @import "./scss/mixin/respon";
 @import "../variable/colors";
+@import "../component/arrow";
 
+#hero{
+    position: relative;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.26);
+    
+}
 header{
     position: relative;
     // background-color: #f4c051;
-    background-color: #c6fce5;
+    background-color: #f397c0;
     overflow: visible;
+    
     .hero{
-        height: 90vh;
+        position: relative;
+        height: 99vh;
         display: flex;
         justify-content: center;
+        align-items: center;
+        color: white;
+        .izq{
+            display: flex;
+            position: relative;
+            width: calc(50% - 20px);
+            z-index: 0;
+            margin: 0  0 0 -0px;
+            img{
+                width: 100%;
+            }
+        }
+        .der{
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            h1{
+                margin: 0 0 0 0 ;
+                font-size: 1.9rem;
+                letter-spacing: 1.5px;
+            }
+            h2{
+                max-width: 500px;
+                // text-align: center;
+                margin: 20px 0 70px 0 ;
+                font-size: 1.3rem;
+                letter-spacing: 1.2px;
+            }
+            .container{
+                display: flex;
+                height: 50px;
+                width: 100%;
+                
+            }
+        }
+
+        
+
     }
 
     @include respon(tablet){ ///////////////////// TABLET

@@ -1,8 +1,10 @@
 @import "./sections/header";
 @import "./sections/footer";
 @import "./sections/service";
+@import "./sections/equipo";
 @import "./component/navbar";
-@import "./mixin/respon";
+@import "./component/arrow";
+@import "./mixin/respon"; 
 
 
 
@@ -11,8 +13,8 @@ html {
     
 }
 body {
-    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
     
 }
 
@@ -22,22 +24,21 @@ button {
   --left: 50%;
   --size: 100%;
   color: #fff;
-  background:rgba(111,64,106,0.9);
+  background: #adc9f0;
   border: none;
-  //border: 1px solid rgba(94, 54, 90, 0.9);
   padding: 0.6rem 1.25rem;
-  font-size: 0.8rem;
-  border-radius: 3px;
-  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.6px;
   overflow: hidden;
   position: relative;
   outline: none;
   cursor: pointer;
   &:active{
     padding: 0.59rem 1.19rem;
-    font-size: 0.78rem;
+    font-size: 0.98rem;
   }
 }
 button:before {
@@ -79,6 +80,9 @@ a {
   text-decoration: none;
 }
 .wave{
-  background-color: #cadefc;
+  background-color: #c6fce56b;
 }
-
+section{
+  overflow: hidden;
+  box-sizing: border-box;
+}

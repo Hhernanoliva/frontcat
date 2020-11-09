@@ -1,109 +1,156 @@
 @import "../mixin/respon";
 
 section{
-    background-color:#cadefc;
     overflow: visible;
     .service{
+        overflow: visible;
+        // background-color:#c6fce56b;
+        background-color: white;
         .container{
             .card{
-                .izq{
+                .content{
                     position: relative;
-                    .video {
-                        display: flex;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        min-width: 100%;
-                        min-height: 100%;
-                        width: 300px;
-                        height: 534px;
-                        z-index: 1;
-                        -ms-transform: translateX(-50%) translateY(-50%);
-                        -moz-transform: translateX(-50%) translateY(-50%);
-                        -webkit-transform: translateX(-50%) translateY(-50%);
-                        transform: translateX(-50%) translateY(-50%);
-                        background: url(placeholder.jpg) no-repeat;
-                        background-size: cover;
-                        }
-                }
-                .der{
-                    background-color: white;
+                    // background-color: white;
                     color: black;
                 }
-            }
-            .card-rev{
-                .der-rev{
-                    
-                }
-                .izq-rev{
-                    position: relative;
-                    .video {
-                        display: flex;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        min-width: 100%;
-                        min-height: 100%;
-                        width: 300px;
-                        height: 534px;
-                        z-index: 1;
-                        -ms-transform: translateX(-50%) translateY(-50%);
-                        -moz-transform: translateX(-50%) translateY(-50%);
-                        -webkit-transform: translateX(-50%) translateY(-50%);
-                        transform: translateX(-50%) translateY(-50%);
-                        background: url(placeholder.jpg) no-repeat;
-                        background-size: cover;
-                        }
-                }
-            }
-           
+            }  
         }
     }
     @include respon(tablet){ ///////////////////// TABLET
         .service{
-            padding: 100px;
+            width: 100wh;
+            position: relative;
+            padding: 100px 0 0 0;
+            display: flex;
+            overflow: visible;
+            box-sizing: content-box;
             .container{
                 width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                box-sizing: content-box;
                 .card{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-                    .izq{
-                        position: relative;
-                        width: 300px;
-                        height: 450px;
-                        margin: 0 100px 0 0;
+                    position: relative;
+                    box-sizing: content-box;
+                    margin: 0 200px 100px 0;
+                    .izq-blob{
+                        position: absolute;
+                        width: 600px;
+                        right: 130%;
+                        top: -10%;
+                        transition: all 1s ease;
+                        transform: rotate(90deg)
                     }
-                    .der{
-                        padding: 40px;
-                        width: 300px;
+                    .der-blob{
+                        position: absolute;
+                        width: 700px;
+                        left: 150%;
+                        top: 80%;
+                        transition: all 2s ease;
+                    }
+                    .content{
+                        padding: 20px 40px;
+                        width: 400px;
                         height: 350px;
-                        font-size: 1rem;
-                    }
-                }
-
-                .card-rev{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-                    margin: 180px 0 0 0;
-                    .izq-rev{
-                        background-color: aquamarine;
-                        width: 300px;
-                        height: 450px;
                         
+                        // border: solid 0.1px rgba(0, 0, 0, 0.404);
+                        // box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.384);
+                        .container{
+                            width: 170px;
+                            position: absolute;
+                            top: 50%;
+                            left: 125%;
+                            z-index: 1;
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                            -moz-transform: translateX(-50%) translateY(-50%);
+                            -webkit-transform: translateX(-50%) translateY(-50%);
+                            transform: translateX(-50%) translateY(-50%);
+                            background: url(placeholder.jpg) no-repeat;
+                            background-size: cover;
+
+                            .video {
+                                box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);
+                                width: 100%;
+                                border: solid 0.1px rgba(0, 0, 0, 0.404);
+
+                            }
+                        }
+                        p{
+                            font-size: 1rem;
+                            letter-spacing: 1.2px;
+                            line-height: 24px;
+                            a{
+                               color: #e272a5;
+                            }
+                        }
+                        .container-tech{
+                            position: relative;
+                            display:flex;
+                            img{
+                                margin: 40px 20px 0 0;
+                                width: 40px;
+                            }
+                            a{
+                                position: absolute;
+                                right: 0;
+                                bottom: -50%;
+                                color: #e272a5;
+                            }
+                        }   
                     }
-                    
-                    .der-rev{
-                        background-color: rgb(255, 238, 0);
-                        width: 300px;
+                    .content-rev{
+                        margin: 0 0 0 400px;
+                        padding: 20px 40px;
+                        width: 400px;
                         height: 350px;
-                        margin: 0 100px 0 0;
+                        position: relative;
+                        .container-rev{
+                            width: 170px;
+                            position: absolute;
+                            top: 50%;
+                            left: -25%; 
+                            z-index: 1;
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                            -moz-transform: translateX(-50%) translateY(-50%);
+                            -webkit-transform: translateX(-50%) translateY(-50%);
+                            transform: translateX(-50%) translateY(-50%);
+                            background: url(placeholder.jpg) no-repeat;
+                            background-size: cover;
+                            .video {
+                                box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);;
+                                width: 100%;
+                                border: solid 0.1px rgba(0, 0, 0, 0.404);
+
+                            }
+                        }
+                        p{
+                            font-size: 1rem;
+                            letter-spacing: 1.2px;
+                            line-height: 24px;
+                            margin: 0 0 0 0;
+                            a{
+                                color:#e272a5;
+                            }
+                        }
+                        .container-tech{
+                            position: relative;
+                            display:flex;
+                            justify-content: flex-end;
+                            img{
+                                margin: 40px 0 0 20px;
+                                width: 40px;
+                            }
+                            a{
+                                position: absolute;
+                                left: 0;
+                                bottom: -50%;
+                                color: #e272a5;
+                            }
+                        }   
                     }
                 }
-                
             }
         }
     }
@@ -111,12 +158,7 @@ section{
     @include respon(mobile){ ///////// MOBILE
         .service{
             .container{
-                izq{
-    
-                }
-                .der{
-    
-                }
+
             }
         }
     }
