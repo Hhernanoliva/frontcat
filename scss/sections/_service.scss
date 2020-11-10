@@ -1,80 +1,139 @@
 @import "../mixin/respon";
 
 section{
-    overflow: visible;
     .service{
+        width: 100wh;
+        position: relative;
+        display: flex;
         overflow: visible;
-        // background-color:#c6fce56b;
-        background-color: white;
+        box-sizing: content-box;
         .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            box-sizing: content-box;
             .card{
-                .content{
-                    position: relative;
-                    // background-color: white;
-                    color: black;
+                position: relative;
+                box-sizing: content-box;
+                .izq-blob{
+                    position: absolute;
+                    transition: all 1s ease;
+                    transform: rotate(90deg)
                 }
-            }  
+                .der-blob{
+                    position: absolute;
+                    transition: all 2s ease;
+                }
+                .content{
+                    .container{
+                        
+                        position: absolute;
+                        z-index: 1;
+                        -ms-transform: translateX(-50%) translateY(-50%);
+                        -moz-transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                        background: url(placeholder.jpg) no-repeat;
+                        background-size: cover;
+
+                        .video {
+                            box-shadow: 8px 8px 5px 0px rgba(243,151,192,0.4);
+                            width: 100%;
+                            border: solid 0.1px rgba(243,151,192,0.4);
+
+                        }
+                    }
+                    p{
+                        a{
+                           color: #e272a5;
+                        }
+                    }
+                    .container-tech{
+                        position: relative;
+                        display:flex;
+                        img{
+
+                        }
+                        a{
+                            position: absolute;
+                            color: #e272a5;
+                        }
+                    }   
+                }
+                .content-rev{
+                    position: relative;
+                    .container-rev{
+                        position: absolute;
+                        z-index: 1;
+                        -ms-transform: translateX(-50%) translateY(-50%);
+                        -moz-transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                        background: url(placeholder.jpg) no-repeat;
+                        background-size: cover;
+                        .video {
+                            box-shadow: 8px 8px 5px 0px rgba(243,151,192,0.4);
+                            width: 100%;
+                            border: solid 0.1px rgba(243,151,192,0.4);
+
+                        }
+                    }
+                    p{
+                        a{
+                            color:#e272a5;
+                        }
+                    }
+                    .container-tech{
+                        position: relative;
+                        display:flex;
+                        justify-content: flex-end;
+                        img{
+                        }
+                        a{
+                            position: absolute;
+                            color: #e272a5;
+                        }
+                    }   
+                }
+            }
         }
     }
     @include respon(tablet){ ///////////////////// TABLET
-        .service{
-            width: 100wh;
-            position: relative;
+        .proyectos{
+            font-size: 1.8rem;
+            margin: 0 0 0 0;
             padding: 100px 0 0 0;
-            display: flex;
-            overflow: visible;
-            box-sizing: content-box;
+            font-family: 'Caveat', cursive;
+        }
+        .service{
+            padding: 0;
             .container{
                 width: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                flex-direction: column;
-                box-sizing: content-box;
                 .card{
-                    position: relative;
-                    box-sizing: content-box;
                     margin: 0 200px 100px 0;
                     .izq-blob{
-                        position: absolute;
                         width: 600px;
                         right: 130%;
                         top: -10%;
-                        transition: all 1s ease;
-                        transform: rotate(90deg)
                     }
                     .der-blob{
-                        position: absolute;
                         width: 700px;
                         left: 150%;
                         top: 80%;
-                        transition: all 2s ease;
                     }
                     .content{
                         padding: 20px 40px;
                         width: 400px;
                         height: 350px;
-                        
-                        // border: solid 0.1px rgba(0, 0, 0, 0.404);
-                        // box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.384);
                         .container{
                             width: 170px;
-                            position: absolute;
                             top: 50%;
                             left: 125%;
+                            position: absolute;
                             z-index: 1;
-                            -ms-transform: translateX(-50%) translateY(-50%);
-                            -moz-transform: translateX(-50%) translateY(-50%);
-                            -webkit-transform: translateX(-50%) translateY(-50%);
-                            transform: translateX(-50%) translateY(-50%);
-                            background: url(placeholder.jpg) no-repeat;
-                            background-size: cover;
-
                             .video {
-                                box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);
-                                width: 100%;
-                                border: solid 0.1px rgba(0, 0, 0, 0.404);
-
                             }
                         }
                         p{
@@ -82,21 +141,16 @@ section{
                             letter-spacing: 1.2px;
                             line-height: 24px;
                             a{
-                               color: #e272a5;
                             }
                         }
                         .container-tech{
-                            position: relative;
-                            display:flex;
                             img{
                                 margin: 40px 20px 0 0;
                                 width: 40px;
                             }
                             a{
-                                position: absolute;
                                 right: 0;
                                 bottom: -50%;
-                                color: #e272a5;
                             }
                         }   
                     }
@@ -105,24 +159,11 @@ section{
                         padding: 20px 40px;
                         width: 400px;
                         height: 350px;
-                        position: relative;
                         .container-rev{
                             width: 170px;
-                            position: absolute;
                             top: 50%;
-                            left: -25%; 
-                            z-index: 1;
-                            -ms-transform: translateX(-50%) translateY(-50%);
-                            -moz-transform: translateX(-50%) translateY(-50%);
-                            -webkit-transform: translateX(-50%) translateY(-50%);
-                            transform: translateX(-50%) translateY(-50%);
-                            background: url(placeholder.jpg) no-repeat;
-                            background-size: cover;
+                            left: -25%;
                             .video {
-                                box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);;
-                                width: 100%;
-                                border: solid 0.1px rgba(0, 0, 0, 0.404);
-
                             }
                         }
                         p{
@@ -131,22 +172,16 @@ section{
                             line-height: 24px;
                             margin: 0 0 0 0;
                             a{
-                                color:#e272a5;
                             }
                         }
                         .container-tech{
-                            position: relative;
-                            display:flex;
-                            justify-content: flex-end;
                             img{
                                 margin: 40px 0 0 20px;
                                 width: 40px;
                             }
                             a{
-                                position: absolute;
                                 left: 0;
                                 bottom: -50%;
-                                color: #e272a5;
                             }
                         }   
                     }
@@ -156,9 +191,129 @@ section{
     }
 
     @include respon(mobile){ ///////// MOBILE
+        .proyectos{
+            font-size: 1.8rem;
+            margin: 50px 0 0 0;
+            font-family: 'Caveat', cursive;
+        }
         .service{
+            padding: 0;
             .container{
-
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin: 0;
+                    .izq-blob{
+                        width: 400px;
+                        right: 50%;
+                        top: 0%;
+                    }
+                    .der-blob{
+                        width: 400px;
+                        left: 50%;
+                        top: 100%;
+                    }
+                    .content{
+                        padding: 0px 40px;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content:center;
+                        flex-direction: column;
+                        position: relative;
+                        .container{
+                            top: 60%;
+                            left: 50%;
+                            .video{
+                                width: 200px;
+                            }
+                        }
+                        p{
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 0.9rem;
+                            letter-spacing: 1.1px;
+                            line-height: 22px;
+                            max-width: 300px;
+                            a{
+                            }
+                        }
+                        .container-tech{
+                            display: flex;
+                            align-items: center;
+                            justify-content:center;
+                            flex-direction: row;
+                            position: relative;
+                            margin: 350px 0 0 0;
+                            width: 100%;
+                            top: 0;
+                            left: 20%;
+                            img{
+                                margin: 40px 20px 0 0;
+                                width: 40px;
+                                position: relative;
+                            }
+                            a{
+                                position: relative;
+                                right: 52%;
+                                bottom: 30%;
+                            }
+                        }   
+                    }
+                    .content-rev{
+                        padding: 50px 40px;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content:center;
+                        flex-direction: column;
+                        position: relative;
+                        .container-rev{
+                            top: 62%;
+                            left: 50%;
+                            .video {
+                                width: 200px;
+                            }
+                        }
+                        p{
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 0.9rem;
+                            letter-spacing: 1.1px;
+                            line-height: 22px;
+                            max-width: 300px;
+                            a{
+                            }
+                        }
+                        .container-tech{
+                            display: flex;
+                            align-items: center;
+                            justify-content:center;
+                            flex-direction: row;
+                            position: relative;
+                            margin: 370px 0 0 0;
+                            width: 100%;
+                            top: 0;
+                            left: 20%;
+                            img{
+                                margin: 40px 20px 0 0;
+                                width: 40px;
+                                position: relative;
+                            }
+                            a{
+                                position: relative;
+                                right: 52%;
+                                bottom: 30%;
+                            }
+                        }   
+                    }
+                }
             }
         }
     }
