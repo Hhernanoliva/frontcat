@@ -39,9 +39,9 @@ section{
                         background-size: cover;
 
                         .video {
-                            box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);
+                            box-shadow: 8px 8px 5px 0px rgba(243,151,192,0.4);
                             width: 100%;
-                            border: solid 0.1px rgba(0, 0, 0, 0.404);
+                            border: solid 0.1px rgba(243,151,192,0.4);
 
                         }
                     }
@@ -74,9 +74,9 @@ section{
                         background: url(placeholder.jpg) no-repeat;
                         background-size: cover;
                         .video {
-                            box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.384);;
+                            box-shadow: 8px 8px 5px 0px rgba(243,151,192,0.4);
                             width: 100%;
-                            border: solid 0.1px rgba(0, 0, 0, 0.404);
+                            border: solid 0.1px rgba(243,151,192,0.4);
 
                         }
                     }
@@ -102,8 +102,10 @@ section{
     }
     @include respon(tablet){ ///////////////////// TABLET
         .proyectos{
+            font-size: 1.8rem;
             margin: 0 0 0 0;
             padding: 100px 0 0 0;
+            font-family: 'Caveat', cursive;
         }
         .service{
             padding: 0;
@@ -190,7 +192,9 @@ section{
 
     @include respon(mobile){ ///////// MOBILE
         .proyectos{
+            font-size: 1.8rem;
             margin: 50px 0 0 0;
+            font-family: 'Caveat', cursive;
         }
         .service{
             padding: 0;
