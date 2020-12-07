@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;700&display=swap");
 .arrow,
 .arrow:before {
   position: absolute;
@@ -38,7 +39,8 @@
 
 #hero {
   position: relative;
-  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.26); }
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.26);
+  font-family: 'Heebo', sans-serif; }
 
 header {
   position: relative;
@@ -60,13 +62,19 @@ header {
     header .hero .der {
       position: relative;
       z-index: 2; }
+      header .hero .der h1 {
+        font-weight: 400; }
+      header .hero .der p {
+        font-weight: 200; }
       header .hero .der .container {
         display: flex;
         width: 100%; }
   @media (min-width: 767px) {
     header .hero .izq {
-      width: calc(50% - 20px);
-      margin: 0  0 0 -0px; }
+      margin: 0  0 0 0px; }
+      header .hero .izq img {
+        max-width: 600px;
+        margin: 0 0 80px 0; }
     header .hero .der {
       margin: 0; }
       header .hero .der h1 {
@@ -135,53 +143,36 @@ header {
     .footer {
       padding: 30px 0; } }
 
-section .service {
-  width: 100wh;
-  position: relative;
-  display: flex;
-  overflow: visible;
-  box-sizing: content-box; }
-  section .service .container {
-    width: 100%;
+section {
+  font-family: 'Heebo', sans-serif; }
+  section h2 {
+    font-weight: 400; }
+  section p {
+    font-weight: 300; }
+  section .service {
+    width: 100wh;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    overflow: visible;
     box-sizing: content-box; }
-    section .service .container .card {
-      position: relative;
+    section .service .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
       box-sizing: content-box; }
-      section .service .container .card .izq-blob {
-        position: absolute;
-        transition: all 1s ease;
-        transform: rotate(90deg); }
-      section .service .container .card .der-blob {
-        position: absolute;
-        transition: all 2s ease; }
-      section .service .container .card .content .container {
-        position: absolute;
-        z-index: 1;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        background: url(placeholder.jpg) no-repeat;
-        background-size: cover; }
-        section .service .container .card .content .container .video {
-          box-shadow: 8px 8px 5px 0px rgba(243, 151, 192, 0.4);
-          width: 100%;
-          border: solid 0.1px rgba(243, 151, 192, 0.4); }
-      section .service .container .card .content p a {
-        color: #e272a5; }
-      section .service .container .card .content .container-tech {
+      section .service .container .card {
         position: relative;
-        display: flex; }
-        section .service .container .card .content .container-tech a {
+        box-sizing: content-box; }
+        section .service .container .card .izq-blob {
           position: absolute;
-          color: #e272a5; }
-      section .service .container .card .content-rev {
-        position: relative; }
-        section .service .container .card .content-rev .container-rev {
+          transition: all 1s ease;
+          transform: rotate(90deg); }
+        section .service .container .card .der-blob {
+          position: absolute;
+          transition: all 2s ease; }
+        section .service .container .card .content .container {
           position: absolute;
           z-index: 1;
           -ms-transform: translateX(-50%) translateY(-50%);
@@ -190,322 +181,347 @@ section .service {
           transform: translateX(-50%) translateY(-50%);
           background: url(placeholder.jpg) no-repeat;
           background-size: cover; }
-          section .service .container .card .content-rev .container-rev .video {
+          section .service .container .card .content .container .video {
             box-shadow: 8px 8px 5px 0px rgba(243, 151, 192, 0.4);
             width: 100%;
             border: solid 0.1px rgba(243, 151, 192, 0.4); }
-        section .service .container .card .content-rev p a {
+        section .service .container .card .content p a {
           color: #e272a5; }
-        section .service .container .card .content-rev .container-tech {
+        section .service .container .card .content .container-tech {
           position: relative;
-          display: flex;
-          justify-content: flex-end; }
-          section .service .container .card .content-rev .container-tech a {
+          display: flex; }
+          section .service .container .card .content .container-tech a {
             position: absolute;
             color: #e272a5; }
-
-@media (min-width: 767px) {
-  section .proyectos {
-    font-size: 1.8rem;
-    margin: 0 0 0 0;
-    padding: 100px 0 0 0;
-    font-family: 'Caveat', cursive; }
-  section .service {
-    padding: 0; }
-    section .service .container {
-      width: 100%; }
-      section .service .container .card {
-        margin: 0 200px 100px 0; }
-        section .service .container .card .izq-blob {
-          width: 600px;
-          right: 130%;
-          top: -10%; }
-        section .service .container .card .der-blob {
-          width: 700px;
-          left: 150%;
-          top: 80%; }
-        section .service .container .card .content {
-          padding: 20px 40px;
-          width: 400px;
-          height: 350px; }
-          section .service .container .card .content .container {
-            width: 170px;
-            top: 50%;
-            left: 125%;
-            position: absolute;
-            z-index: 1; }
-          section .service .container .card .content p {
-            font-size: 1rem;
-            letter-spacing: 1.2px;
-            line-height: 24px; }
-          section .service .container .card .content .container-tech img {
-            margin: 40px 20px 0 0;
-            width: 40px; }
-          section .service .container .card .content .container-tech a {
-            right: 0;
-            bottom: -50%; }
         section .service .container .card .content-rev {
-          margin: 0 0 0 400px;
-          padding: 20px 40px;
-          width: 400px;
-          height: 350px; }
-          section .service .container .card .content-rev .container-rev {
-            width: 170px;
-            top: 50%;
-            left: -25%; }
-          section .service .container .card .content-rev p {
-            font-size: 1rem;
-            letter-spacing: 1.2px;
-            line-height: 24px;
-            margin: 0 0 0 0; }
-          section .service .container .card .content-rev .container-tech img {
-            margin: 40px 0 0 20px;
-            width: 40px; }
-          section .service .container .card .content-rev .container-tech a {
-            left: 0;
-            bottom: -50%; } }
-
-@media (max-width: 767px) {
-  section .proyectos {
-    font-size: 1.8rem;
-    margin: 50px 0 0 0;
-    font-family: 'Caveat', cursive; }
-  section .service {
-    padding: 0; }
-    section .service .container {
-      width: 100%;
-      display: flex;
-      flex-direction: column; }
-      section .service .container .card {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: 0; }
-        section .service .container .card .izq-blob {
-          width: 400px;
-          right: 50%;
-          top: 0%; }
-        section .service .container .card .der-blob {
-          width: 400px;
-          left: 50%;
-          top: 100%; }
-        section .service .container .card .content {
-          padding: 0px 40px;
-          box-sizing: border-box;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
           position: relative; }
-          section .service .container .card .content .container {
-            top: 60%;
-            left: 50%; }
-            section .service .container .card .content .container .video {
-              width: 200px; }
-          section .service .container .card .content p {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            font-size: 0.9rem;
-            letter-spacing: 1.1px;
-            line-height: 22px;
-            max-width: 300px; }
-          section .service .container .card .content .container-tech {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
+          section .service .container .card .content-rev .container-rev {
+            position: absolute;
+            z-index: 1;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background: url(placeholder.jpg) no-repeat;
+            background-size: cover; }
+            section .service .container .card .content-rev .container-rev .video {
+              box-shadow: 8px 8px 5px 0px rgba(243, 151, 192, 0.4);
+              width: 100%;
+              border: solid 0.1px rgba(243, 151, 192, 0.4); }
+          section .service .container .card .content-rev p a {
+            color: #e272a5; }
+          section .service .container .card .content-rev .container-tech {
             position: relative;
-            margin: 350px 0 0 0;
-            width: 100%;
-            top: 0;
-            left: 20%; }
+            display: flex;
+            justify-content: flex-end; }
+            section .service .container .card .content-rev .container-tech a {
+              position: absolute;
+              color: #e272a5; }
+  @media (min-width: 767px) {
+    section .proyectos {
+      font-size: 1.8rem;
+      margin: 0 0 0 0;
+      padding: 100px 0 0 0; }
+    section .service {
+      padding: 0; }
+      section .service .container {
+        width: 100%; }
+        section .service .container .card {
+          margin: 0 200px 100px 0; }
+          section .service .container .card .izq-blob {
+            width: 600px;
+            right: 130%;
+            top: -10%; }
+          section .service .container .card .der-blob {
+            width: 700px;
+            left: 150%;
+            top: 80%; }
+          section .service .container .card .content {
+            padding: 20px 40px;
+            width: 400px;
+            height: 350px; }
+            section .service .container .card .content .container {
+              width: 170px;
+              top: 50%;
+              left: 125%;
+              position: absolute;
+              z-index: 1; }
+            section .service .container .card .content p {
+              font-size: 1rem;
+              letter-spacing: 1.2px;
+              line-height: 24px; }
             section .service .container .card .content .container-tech img {
               margin: 40px 20px 0 0;
-              width: 40px;
-              position: relative; }
+              width: 40px; }
             section .service .container .card .content .container-tech a {
-              position: relative;
-              right: 52%;
-              bottom: 30%; }
-        section .service .container .card .content-rev {
-          padding: 50px 40px;
-          box-sizing: border-box;
+              right: 0;
+              bottom: -50%; }
+          section .service .container .card .content-rev {
+            margin: 0 0 0 400px;
+            padding: 20px 40px;
+            width: 400px;
+            height: 350px; }
+            section .service .container .card .content-rev .container-rev {
+              width: 170px;
+              top: 50%;
+              left: -25%; }
+            section .service .container .card .content-rev p {
+              font-size: 1rem;
+              letter-spacing: 1.2px;
+              line-height: 24px;
+              margin: 0 0 0 0; }
+            section .service .container .card .content-rev .container-tech img {
+              margin: 40px 0 0 20px;
+              width: 40px; }
+            section .service .container .card .content-rev .container-tech a {
+              left: 0;
+              bottom: -50%; }
+        section .service .container .card-1 {
+          margin: 0 200px 30px 0; } }
+  @media (max-width: 767px) {
+    section .proyectos {
+      font-size: 1.8rem;
+      margin: 50px 0 0 0; }
+    section .service {
+      padding: 0; }
+      section .service .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        section .service .container .card {
           display: flex;
-          align-items: center;
-          justify-content: center;
           flex-direction: column;
-          position: relative; }
-          section .service .container .card .content-rev .container-rev {
-            top: 62%;
-            left: 50%; }
-            section .service .container .card .content-rev .container-rev .video {
-              width: 200px; }
-          section .service .container .card .content-rev p {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            font-size: 0.9rem;
-            letter-spacing: 1.1px;
-            line-height: 22px;
-            max-width: 300px; }
-          section .service .container .card .content-rev .container-tech {
+          position: relative;
+          margin: 0; }
+          section .service .container .card .izq-blob {
+            width: 400px;
+            right: 50%;
+            top: 0%; }
+          section .service .container .card .der-blob {
+            width: 400px;
+            left: 50%;
+            top: 100%; }
+          section .service .container .card .content {
+            padding: 0px 40px;
+            box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: row;
-            position: relative;
-            margin: 370px 0 0 0;
-            width: 100%;
-            top: 0;
-            left: 20%; }
-            section .service .container .card .content-rev .container-tech img {
-              margin: 40px 20px 0 0;
-              width: 40px;
-              position: relative; }
-            section .service .container .card .content-rev .container-tech a {
+            flex-direction: column;
+            position: relative; }
+            section .service .container .card .content .container {
+              top: 60%;
+              left: 50%; }
+              section .service .container .card .content .container .video {
+                width: 200px; }
+            section .service .container .card .content p {
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+              font-size: 0.9rem;
+              letter-spacing: 1.1px;
+              line-height: 22px;
+              max-width: 300px; }
+            section .service .container .card .content .container-tech {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
               position: relative;
-              right: 52%;
-              bottom: 30%; } }
+              margin: 350px 0 0 0;
+              width: 100%;
+              top: 0;
+              left: 20%; }
+              section .service .container .card .content .container-tech img {
+                margin: 40px 20px 0 0;
+                width: 40px;
+                position: relative; }
+              section .service .container .card .content .container-tech a {
+                position: relative;
+                right: 52%;
+                bottom: 30%; }
+          section .service .container .card .content-rev {
+            padding: 50px 40px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative; }
+            section .service .container .card .content-rev .container-rev {
+              top: 62%;
+              left: 50%; }
+              section .service .container .card .content-rev .container-rev .video {
+                width: 200px; }
+            section .service .container .card .content-rev p {
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+              font-size: 0.9rem;
+              letter-spacing: 1.1px;
+              line-height: 22px;
+              max-width: 300px; }
+            section .service .container .card .content-rev .container-tech {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+              position: relative;
+              margin: 370px 0 0 0;
+              width: 100%;
+              top: 0;
+              left: 20%; }
+              section .service .container .card .content-rev .container-tech img {
+                margin: 40px 20px 0 0;
+                width: 40px;
+                position: relative; }
+              section .service .container .card .content-rev .container-tech a {
+                position: relative;
+                right: 52%;
+                bottom: 30%; } }
 
-section .linea-animation {
-  position: relative;
-  animation: mymove 90s infinite;
-  animation-timing-function: linear; }
-  section .linea-animation img {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    bottom: -27px;
-    right: 0; }
+section {
+  font-family: 'Heebo', sans-serif; }
+  section .linea-animation {
+    position: relative;
+    animation: mymove 90s infinite;
+    animation-timing-function: linear; }
+    section .linea-animation img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      bottom: -27px;
+      right: 0; }
 
 @keyframes mymove {
   from {
     right: -100px; }
   to {
     right: 100%; } }
-
-section .equipo {
-  background-color: white;
-  position: relative;
-  margin: 60px 0 100px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  section .equipo .container-content {
-    width: 100%;
+  section .equipo {
+    background-color: white;
+    position: relative;
+    margin: 60px 0 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    section .equipo .container-content .content {
+    section .equipo .container-content {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      section .equipo .container-content .content h2 {
-        text-align: center;
-        font-family: 'Caveat', cursive; }
-      section .equipo .container-content .content article {
-        text-align: center; }
-  section .equipo .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
-    section .equipo .container .card {
+      justify-content: center;
+      align-items: center; }
+      section .equipo .container-content .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        section .equipo .container-content .content h2 {
+          text-align: center;
+          font-family: 'Caveat', cursive; }
+        section .equipo .container-content .content article {
+          text-align: center; }
+    section .equipo .container {
       display: flex;
       justify-content: center;
-      flex-direction: row;
-      align-items: center; }
-      section .equipo .container .card .container-foto img {
-        width: 100%;
-        height: 100%; }
-    section .equipo .container .img-container {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      section .equipo .container .img-container img {
-        width: 100%; }
-  section .equipo .calltoaction {
-    margin: 100px 0 0 0; }
-  @media (min-width: 767px) {
-    section .equipo .container-content .content {
-      width: 500px; }
-      section .equipo .container-content .content h2 {
-        font-size: 1.8rem;
-        letter-spacing: 3px;
-        font-family: 'Caveat', cursive;
-        margin: 0 0 0.8em 0; }
-      section .equipo .container-content .content article {
-        font-size: 1rem;
-        letter-spacing: 1px;
-        margin: 0 0 2em 0;
-        line-height: 22px; }
-    section .equipo .container .card .container-foto {
-      margin: 0;
-      width: 200px;
-      height: 100%; }
-      section .equipo .container .card .container-foto img {
-        width: 100%;
-        height: 100%; }
-    section .equipo .container .card .container-content .redes .icono {
-      margin: 5px 0 0 0;
-      width: 20px;
-      height: 20px; }
-    section .equipo .container .card .container-content h1 {
-      font-size: 1.3rem;
-      letter-spacing: 0.6px; }
-    section .equipo .container .card .container-content p {
-      font-size: 0.9rem;
-      margin: 0 0 10px 0; }
-    section .equipo .container .img-container {
-      width: 350px; }
-      section .equipo .container .img-container img {
-        width: 100%; } }
-  @media (max-width: 767px) {
-    section .equipo {
-      margin: 50px 0 0 0; }
-      section .equipo .calltoaction {
-        margin: 175px 0 75px 0; }
-      section .equipo .container-content .content {
-        width: 350px; }
-        section .equipo .container-content .content h2 {
-          font-size: 1.8rem; }
-        section .equipo .container-content .content article {
-          font-size: 1.1rem;
-          padding: 0 10px; }
+      flex-direction: row; }
       section .equipo .container .card {
-        margin: 20px 0 0 0;
-        position: relative; }
-        section .equipo .container .card .container-foto {
-          position: relative;
-          margin: 0;
-          width: 130px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center; }
+        section .equipo .container .card .container-foto img {
+          width: 100%;
           height: 100%; }
-          section .equipo .container .card .container-foto img {
-            width: 100%;
-            height: 100%; }
-        section .equipo .container .card .container-content {
-          position: absolute;
-          text-align: center;
-          top: 105%;
-          margin: 0 25px 0 0; }
-          section .equipo .container .card .container-content:nth-child(2) {
-            margin: 0 0 0 25px; }
-          section .equipo .container .card .container-content .redes .icono {
-            margin: 0;
-            width: 20px;
-            height: 20px; }
-          section .equipo .container .card .container-content h1 {
-            font-size: 1.1rem; }
-          section .equipo .container .card .container-content p {
-            text-align: center;
-            font-size: 0.78rem;
-            margin: 0 0 10px 0; }
+      section .equipo .container .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section .equipo .container .img-container img {
+          width: 100%; }
+    section .equipo .calltoaction {
+      margin: 70px 0 0 0; }
+    @media (min-width: 767px) {
+      section .equipo .container-content .content {
+        width: 500px; }
+        section .equipo .container-content .content h2 {
+          font-family: 'Heebo', sans-serif;
+          font-weight: 400;
+          font-size: 1.8rem;
+          letter-spacing: 3px;
+          margin: 0 0 0.8em 0; }
+        section .equipo .container-content .content article {
+          font-weight: 300;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          margin: 0 0 2em 0;
+          line-height: 22px; }
+      section .equipo .container .card .container-foto {
+        margin: 0;
+        width: 200px;
+        height: 100%; }
+        section .equipo .container .card .container-foto img {
+          width: 100%;
+          height: 100%; }
+      section .equipo .container .card .container-content .redes .icono {
+        margin: 5px 0 0 0;
+        width: 20px;
+        height: 20px; }
+      section .equipo .container .card .container-content h1 {
+        font-weight: 400;
+        font-size: 1.3rem;
+        letter-spacing: 0.6px; }
+      section .equipo .container .card .container-content p {
+        font-size: 0.9rem;
+        margin: 0 0 10px 0; }
       section .equipo .container .img-container {
         width: 350px; }
         section .equipo .container .img-container img {
           width: 100%; } }
+    @media (max-width: 767px) {
+      section .equipo {
+        margin: 50px 0 0 0; }
+        section .equipo .calltoaction {
+          margin: 175px 0 75px 0; }
+        section .equipo .container-content .content {
+          width: 350px; }
+          section .equipo .container-content .content h2 {
+            font-size: 1.8rem; }
+          section .equipo .container-content .content article {
+            font-size: 1.1rem;
+            padding: 0 10px; }
+        section .equipo .container .card {
+          margin: 20px 0 0 0;
+          position: relative; }
+          section .equipo .container .card .container-foto {
+            position: relative;
+            margin: 0;
+            width: 130px;
+            height: 100%; }
+            section .equipo .container .card .container-foto img {
+              width: 100%;
+              height: 100%; }
+          section .equipo .container .card .container-content {
+            position: absolute;
+            text-align: center;
+            top: 105%;
+            margin: 0 25px 0 0; }
+            section .equipo .container .card .container-content:nth-child(2) {
+              margin: 0 0 0 25px; }
+            section .equipo .container .card .container-content .redes .icono {
+              margin: 0;
+              width: 20px;
+              height: 20px; }
+            section .equipo .container .card .container-content h1 {
+              font-size: 1.1rem; }
+            section .equipo .container .card .container-content p {
+              text-align: center;
+              font-size: 0.78rem;
+              margin: 0 0 10px 0; }
+        section .equipo .container .img-container {
+          width: 350px; }
+          section .equipo .container .img-container img {
+            width: 100%; } }
 
 @font-face {
   font-family: "Rock";
