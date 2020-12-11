@@ -227,7 +227,8 @@ section {
       section .service .container {
         width: 100%; }
         section .service .container .card {
-          margin: 0 200px 100px 0; }
+          margin: 0 200px 100px 0;
+          padding: 45px 0; }
           section .service .container .card .izq-blob {
             width: 600px;
             right: 130%;
